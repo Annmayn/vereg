@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test Server</title>
+</head>
+
+<body>
+	<h1>{{post.title}}</h1>
+	<p>{{post.text}}</p>
+	<p>Created on: {{post.created_date}}</p>
+	{% if post.published_date %}
+	<p>Published on: {{post.published_date}}</p>
+	{% else %}
+	<p>Published on: -</p>
+	{% endif %}
+</body>
+</html>
